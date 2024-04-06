@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Found Form</title>
+    <link rel="stylesheet" href="found.css">
 </head>
 <body>
     <h2>Found Form</h2>
 
     <form action="{% url 'found' %}" method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
+        <!-- {% csrf_token %} -->
         <label for="found_name">Name:</label><br>
         <input type="text" id="found_name" name="name" required><br>
 

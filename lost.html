@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost Form</title>
+    <link rel="stylesheet" href="lost.css">
 </head>
 <body>
     <h2>Lost Form</h2>
@@ -28,7 +29,7 @@
     </form> -->
 
     <form action="{% url 'lost' %}" method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
+        <!-- {% csrf_token %} -->
         <label for="lost_name">Name:</label><br>
         <input type="text" id="lost_name" name="name" required><br>
 
