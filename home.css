@@ -53,7 +53,7 @@ header {
     display: flex;
     justify-content: space-between; /* Align items horizontally */
     align-items: center; /* Align items vertically */
-    box-shadow: 0 0 19px 8px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+    box-shadow: 0 0 19px 8px rgba(0, 0, 0, 0.4); /* Stronger shadow with blur */
     font-family: "Open Sans", sans-serif;
     
 }
@@ -179,8 +179,6 @@ nav ul li a.btn {
     color: white; /* Text color */
 }
 
-
-
 footer {
     background-color: #ddd; /* Light gray */
     color: #666; /* Dark gray */
@@ -220,4 +218,27 @@ footer {
 
 header img {
     width: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    .fSec {
+        display: flex;
+        flex-direction: column; /* Align child divs vertically */
+        align-items: center; /* Center align child divs horizontally */
+    }
+
+    .btn,
+    .btn2 {
+        margin: 10px 0; /* Add margin to separate buttons */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .number {
+        display: none; /* Hide the number on mobile screens */
+    }
+
+    .feature {
+        width: calc(100% - 40px); /* Increase the width of the feature div */
+    }
 }
