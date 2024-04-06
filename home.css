@@ -29,6 +29,9 @@
     .menu-icon {
         display: block; /* Display the menu icon */
     }
+    .hero h1 {
+        font-size: 4vw; /* Decreased font size for smaller screens */
+    }
 }
 
 /* Add this transition for smooth animation */
@@ -167,10 +170,10 @@ footer {
 .hero h1 {
     font-family: "Nunito", sans-serif;
     font-weight: bold;
-    font-size: 96px; /* Adjusted font size */
+    font-size: 6vw; /* Use vw (viewport width) unit for responsive font size */
     color: #fff; /* Text color */
     letter-spacing: 4px;
-    margin-bottom: 10px; /* Adjusted margin bottom */
+    margin-bottom: 20px; /* Adjusted margin bottom */
 }
 
 /* Existing CSS continues... */
