@@ -16,7 +16,7 @@
 
     .contact .left,
     .contact .right {
-        margin: 0; /* Remove margin between left and right sections */
+        margin: 0 auto; /* Remove margin between left and right sections */
         width: 100%; /* Make both sections take full width */
     }
 
@@ -330,7 +330,7 @@ header img {
 
 
 .contact form button {
-    width: 110%;
+    width: 105%;
     padding: 10px;
     background-color: #3884FD;
     color: white;
