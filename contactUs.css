@@ -9,6 +9,23 @@
     width: 0px;
   }
 
+  @media only screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column; /* Change to vertical layout for smaller screens */
+    }
+
+    .contact .left,
+    .contact .right {
+        margin: 0; /* Remove margin between left and right sections */
+        width: 100%; /* Make both sections take full width */
+    }
+
+    .contact form,
+    .contact .right {
+        margin-bottom: 30px; /* Add some space between sections */
+    }
+}
+
 /* Add this media query for smaller screens */
 @media only screen and (max-width: 768px) {
     header nav ul {
